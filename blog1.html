@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post 1</title>
+    <style>
+        body, h2, p, a {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: 'Comic Neue', cursive;
+        }
+
+        body {
+            background-color: #f0f4f8; 
+            color: #333; 
+            line-height: 1.6;
+        }
+
+        article {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff; 
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-image {
+            max-width: 50%; 
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto; 
+        }
+
+        .like-section, .comments-section {
+            text-align: center; 
+            padding: 10px 20px;
+        }
+
+        #like-btn, #comment-btn {
+            background-color: #4CAF50; 
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        #like-btn:hover, #comment-btn:hover {
+            background-color: #45a049; 
+        }
+
+        #new-comment {
+            width: 70%;
+            padding: 10px;
+            margin: 10px auto; 
+            display: block; 
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        #comments-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px; 
+        }
+
+        #comments-list li {
+            border-bottom: 1px solid #eee;
+            padding: 10px;
+            text-align: left; 
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h2>An Upstanding Law-abiding Citizen</h2>
+        <img src="blogimg1.jpeg" alt="Image Description" class="blog-image">
+        <p>Aditya Gaur is a law-abiding citizen who holds a strong respect for the rules and regulations that govern society. His commitment to living a disciplined and ethical life extends to his firm stance against underage drinking. Aditya believes in the importance of making responsible choices and the impact those choices have on one's health and well-being. This belief is not just a personal preference but a principle he lives by, reflecting his dedication to maintaining a safe and respectful community. Aditya's distaste for underage drinking is a testament to his character, showcasing his maturity and adherence to legal and moral standards.</p>
+
+        <div class="like-section">
+            <button id="like-btn">Like</button>
+            <span id="like-counter">0</span> Likes
+        </div>
+
+        <div class="comments-section">
+            <h3>Comments</h3>
+            <ul id="comments-list">
+               
+            </ul>
+            <input type="text" id="new-comment" placeholder="Add a comment...">
+            <button id="comment-btn">Comment</button>
+        </div>
+    </article>
+
+    <script src="blog-script.js"></script>
+</body>
+</html>

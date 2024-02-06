@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post 1</title>
+    <style>
+        body, h2, p, a {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: 'Comic Neue', cursive;
+        }
+
+        body {
+            background-color: #f0f4f8; 
+            color: #333; 
+            line-height: 1.6;
+        }
+
+        article {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff; 
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-image {
+            max-width: 50%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto; 
+        }
+
+        .like-section, .comments-section {
+            text-align: center; 
+            padding: 10px 20px;
+        }
+
+        #like-btn, #comment-btn {
+            background-color: #4CAF50; 
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        #like-btn:hover, #comment-btn:hover {
+            background-color: #45a049; 
+        }
+
+        #new-comment {
+            width: 70%;
+            padding: 10px;
+            margin: 10px auto; 
+            display: block; 
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        #comments-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px; 
+        }
+
+        #comments-list li {
+            border-bottom: 1px solid #eee;
+            padding: 10px;
+            text-align: left; 
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h2>Drive to achieve peak male form</h2>
+        <div class="images-container">
+            <img src="blogimg4.jpeg" alt="Image Description" class="blog-image">
+            <img src="blogimg5.jpeg" alt="Image Description" class="blog-image">
+        </div>
+        <p>
+            Aditya's journey through the hallowed halls of physical fitness isn't just about hitting the gym; it's an epic saga of chadmaxxing, looksmaxxing, and buffmaxxing that transcends the mere act of lifting weights. With each gym selfie, he's not merely flexing his gains but showcasing the art of transforming the mundane into the extraordinary. Aditya's regimen is a tongue-in-cheek nod to the pursuit of peak physical form, where the quest for the ultimate 'based' lifestyle merges with the iron-clad dedication of a gym warrior. His photos, set against the backdrop of clanging weights and sweat-soaked benches, are not just snapshots of physical prowess but a whimsical ode to the culture of maximizing one's aesthetic potential. </p>
+
+        <div class="like-section">
+            <button id="like-btn">Like</button>
+            <span id="like-counter">0</span> Likes
+        </div>
+
+        <div class="comments-section">
+            <h3>Comments</h3>
+            <ul id="comments-list">
+                
+            </ul>
+            <input type="text" id="new-comment" placeholder="Add a comment...">
+            <button id="comment-btn">Comment</button>
+        </div>
+    </article>
+
+    <script src="blog-script.js"></script>
+</body>
+</html>
